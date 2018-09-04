@@ -4,3 +4,11 @@ h1{
     font-size: 1cm;
     border-left-color: blueviolet;
 }
+mystyle{
+    color: rgb(79, 121, 78);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 144%;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
