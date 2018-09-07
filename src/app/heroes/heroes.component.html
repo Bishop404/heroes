@@ -10,12 +10,18 @@
   <app-hero-detail [hero]="selectedHero"></app-hero-detail>
  
   <div>
-      <label>Hero name:
-        <input #heroName />
-      </label>
-       <!-- (click) passes input value to add() and then clears the input -->
-       <button mat-raised-button color="primary" (click)="add(heroName.value); heroName.value=''">
-        add
-      </button>
+        <label>Hero name:
+          
+        </label>
+        <div>
+          <input #heroName />
+        </div>
+
+       <div>
+        <button mat-raised-button color="accent" (click)="add(heroName.value); heroName.value=''">
+          add
+        </button>
+       </div>
+      
 
     </div>
