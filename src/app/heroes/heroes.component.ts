@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService} from '../hero.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { HEROES } from '../mock-heroes';
+
 
 
 @Component({
@@ -15,7 +17,6 @@ selectedHero: Hero;
 
 onSelect(hero: Hero): void {
     this.selectedHero = hero;
-    this.heroService.getMessage(hero.name);
 }
 
 constructor(private heroService: HeroService) { }
